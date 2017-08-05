@@ -1,0 +1,16 @@
+<h1><%= form_title_v %></h1>
+
+<%= form_for @vehiculo do |f| %>
+  
+  
+    <div>
+        <%= f.label :marca %>
+        <%= f.text_field :marca %>
+    </div>
+
+    
+    <div>
+      <%= f.submit form_title_v, class: "btn-pink" %>
+    </div>
+
+<% end %>

@@ -1,0 +1,30 @@
+<h1>Vehiculos</h1>
+<table border=1>
+    
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Marca</th>
+            <th>View</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+<% @vehiculos.each do |vehiculo| %>
+       <tr>
+            <td><%= vehiculo.id %> </td>
+            <td><%= vehiculo.marca %> </td>
+            <td><%= link_to "V" , vehiculo_path(vehiculo) %>  </td>
+  
+       </tr>
+    
+<% end %>
+
+    </tbody>
+
+</table>
+
+<div>
+    <%= link_to "Crear Vehiculo",  new_vehiculo_path %>
+</div>
+

@@ -1,0 +1,14 @@
+<h2> <%=@vehiculo.marca %>   </h2>
+
+
+<div>
+    <%= link_to "volver", vehiculos_path  %> 
+</div>
+<div>
+    <%= link_to "Editar", edit_vehiculo_path(@vehiculo), class: "btn-pink" %>
+</div>
+
+<div>
+    <%= link_to "Eliminar", @vehiculo , method: :delete, data: { confirm: "¿Estas seguro?" } %>
+</div>
+
